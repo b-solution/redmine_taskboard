@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag 'style.css', plugin: :redmine_taskboard %>
+<div class="wrapper">
+  <header>
+    <h1>Todo</h1>
+    <a href="#" id="btn_save" class="btn">Save</a>
+    <a href="#" class="new-list btn">Add new list +</a>
+  </header>
+  <div id="todo-lists"></div>
+</div>
+<div id="html5_bg"><p>mTask Board</p></div>
+
+<script>
+  $(document).ready(function(){
+    $.getScript("task_board/init.js");
+  })
+</script>
